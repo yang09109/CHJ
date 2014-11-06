@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A13A2AE19D623D30027EEF4 /* CHJAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A13A2AD19D623D30027EEF4 /* CHJAboutViewController.m */; };
+		8A1F309B199981C400CF24E4 /* CHJAddEventController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F3098199981C400CF24E4 /* CHJAddEventController.m */; };
+		8A1F309C199981C400CF24E4 /* CHJAddEventTableSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F309A199981C400CF24E4 /* CHJAddEventTableSubView.m */; };
+		8A1F30A5199981D500CF24E4 /* CHJDayHourController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F309E199981D500CF24E4 /* CHJDayHourController.m */; };
+		8A1F30A6199981D500CF24E4 /* CHJLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F30A0199981D500CF24E4 /* CHJLoginViewController.m */; };
+		8A1F30A7199981D500CF24E4 /* CHJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F30A2199981D500CF24E4 /* CHJTabBarController.m */; };
+		8A1F30A8199981D500CF24E4 /* CHJWeekDayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F30A4199981D500CF24E4 /* CHJWeekDayController.m */; };
+		8A37D57D198FEE0900A6A9EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A37D57C198FEE0900A6A9EC /* Foundation.framework */; };
+		8A37D57F198FEE0900A6A9EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A37D57E198FEE0900A6A9EC /* CoreGraphics.framework */; };
+		8A37D581198FEE0900A6A9EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A37D580198FEE0900A6A9EC /* UIKit.framework */; };
+		8A37D587198FEE0900A6A9EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A37D585198FEE0900A6A9EC /* InfoPlist.strings */; };
+		8A37D589198FEE0900A6A9EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A37D588198FEE0900A6A9EC /* main.m */; };
+		8A37D58D198FEE0900A6A9EC /* CHJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A37D58C198FEE0900A6A9EC /* CHJAppDelegate.m */; };
+		8A37D58F198FEE0900A6A9EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A37D58E198FEE0900A6A9EC /* Images.xcassets */; };
+		8A37D596198FEE0900A6A9EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A37D595198FEE0900A6A9EC /* XCTest.framework */; };
+		8A37D597198FEE0900A6A9EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A37D57C198FEE0900A6A9EC /* Foundation.framework */; };
+		8A37D598198FEE0900A6A9EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A37D580198FEE0900A6A9EC /* UIKit.framework */; };
+		8A37D5A0198FEE0900A6A9EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A37D59E198FEE0900A6A9EC /* InfoPlist.strings */; };
+		8A37D5A2198FEE0900A6A9EC /* CHJCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A37D5A1198FEE0900A6A9EC /* CHJCalendarTests.m */; };
+		8A37D5AC198FEE2500A6A9EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A37D5AB198FEE2500A6A9EC /* Main.storyboard */; };
+		8A41912F19D63FD90059BBB7 /* CHJEventDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A41912E19D63FD90059BBB7 /* CHJEventDetailController.m */; };
+		8A495F15199239990017479E /* CHJUIUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A495F14199239990017479E /* CHJUIUtility.m */; };
+		8AD44E7E19D75A4D00F65039 /* DSLCalendarDayCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD44E6019D75A4D00F65039 /* DSLCalendarDayCalloutView.m */; };
+		8AD44E7F19D75A4D00F65039 /* DSLCalendarDayCalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E6119D75A4D00F65039 /* DSLCalendarDayCalloutView.xib */; };
+		8AD44E8019D75A4D00F65039 /* DSLCalendarDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD44E6319D75A4D00F65039 /* DSLCalendarDayView.m */; };
+		8AD44E8119D75A4D00F65039 /* DSLCalendarMonthSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD44E6519D75A4D00F65039 /* DSLCalendarMonthSelectorView.m */; };
+		8AD44E8219D75A4D00F65039 /* DSLCalendarMonthSelectorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E6619D75A4D00F65039 /* DSLCalendarMonthSelectorView.xib */; };
+		8AD44E8319D75A4D00F65039 /* DSLCalendarMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD44E6819D75A4D00F65039 /* DSLCalendarMonthView.m */; };
+		8AD44E8419D75A4D00F65039 /* DSLCalendarRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD44E6A19D75A4D00F65039 /* DSLCalendarRange.m */; };
+		8AD44E8519D75A4D00F65039 /* DSLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD44E6C19D75A4D00F65039 /* DSLCalendarView.m */; };
+		8AD44E8619D75A4D00F65039 /* DSLCalendar-nextMonth.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E6E19D75A4D00F65039 /* DSLCalendar-nextMonth.png */; };
+		8AD44E8719D75A4D00F65039 /* DSLCalendar-nextMonth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E6F19D75A4D00F65039 /* DSLCalendar-nextMonth@2x.png */; };
+		8AD44E8819D75A4D00F65039 /* DSLCalendar-previousMonth.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E7019D75A4D00F65039 /* DSLCalendar-previousMonth.png */; };
+		8AD44E8919D75A4D00F65039 /* DSLCalendar-previousMonth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E7119D75A4D00F65039 /* DSLCalendar-previousMonth@2x.png */; };
+		8AD44E8A19D75A4D00F65039 /* DSLCalendarDayCallout.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E7219D75A4D00F65039 /* DSLCalendarDayCallout.png */; };
+		8AD44E8B19D75A4D00F65039 /* DSLCalendarDayCallout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E7319D75A4D00F65039 /* DSLCalendarDayCallout@2x.png */; };
+		8AD44E8C19D75A4D00F65039 /* DSLCalendarDaySelection-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E7419D75A4D00F65039 /* DSLCalendarDaySelection-left.png */; };
+		8AD44E8D19D75A4D00F65039 /* DSLCalendarDaySelection-left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E7519D75A4D00F65039 /* DSLCalendarDaySelection-left@2x.png */; };
+		8AD44E8E19D75A4D00F65039 /* DSLCalendarDaySelection-middle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E7619D75A4D00F65039 /* DSLCalendarDaySelection-middle.png */; };
+		8AD44E8F19D75A4D00F65039 /* DSLCalendarDaySelection-middle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E7719D75A4D00F65039 /* DSLCalendarDaySelection-middle@2x.png */; };
+		8AD44E9019D75A4D00F65039 /* DSLCalendarDaySelection-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E7819D75A4D00F65039 /* DSLCalendarDaySelection-right.png */; };
+		8AD44E9119D75A4D00F65039 /* DSLCalendarDaySelection-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E7919D75A4D00F65039 /* DSLCalendarDaySelection-right@2x.png */; };
+		8AD44E9219D75A4D00F65039 /* DSLCalendarDaySelection.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E7A19D75A4D00F65039 /* DSLCalendarDaySelection.png */; };
+		8AD44E9319D75A4D00F65039 /* DSLCalendarDaySelection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD44E7B19D75A4D00F65039 /* DSLCalendarDaySelection@2x.png */; };
+		8AD44E9419D75A4D00F65039 /* NSDate+DSLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD44E7D19D75A4D00F65039 /* NSDate+DSLCalendarView.m */; };
+		8AD44E9719D75A8000F65039 /* CHJMonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD44E9619D75A8000F65039 /* CHJMonthViewController.m */; };
+		8AD762891998226C00106F83 /* CHJDayHourTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD762871998226C00106F83 /* CHJDayHourTableViewCell.m */; };
+		8AD7628A1998226C00106F83 /* CHJDayHourTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AD762881998226C00106F83 /* CHJDayHourTableViewCell.xib */; };
+		8AD7628E1998238C00106F83 /* CHJWeekDayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD7628C1998238C00106F83 /* CHJWeekDayTableViewCell.m */; };
+		8AD7628F1998238C00106F83 /* CHJWeekDayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AD7628D1998238C00106F83 /* CHJWeekDayTableViewCell.xib */; };
+		8AEAB596199A6D3800D70298 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAB594199A6D3800D70298 /* Main.xcdatamodeld */; };
+		8AECDEA219A26A0000208362 /* CHJSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AECDEA119A26A0000208362 /* CHJSettingController.m */; };
+		8AFFABA619CCA91B006B91EC /* CHJEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFABA519CCA91B006B91EC /* CHJEvent.m */; };
+		D27C22621A0A0C3F0017F970 /* about@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D27C22611A0A0C3F0017F970 /* about@2x.png */; };
+		D27C22641A0A216A0017F970 /* backicon.png in Resources */ = {isa = PBXBuildFile; fileRef = D27C22631A0A216A0017F970 /* backicon.png */; };
+		D27C22711A0B14830017F970 /* CHJAttenionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27C226F1A0B14830017F970 /* CHJAttenionViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A37D599198FEE0900A6A9EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A37D571198FEE0900A6A9EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A37D578198FEE0900A6A9EC;
+			remoteInfo = CHJCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A13A2AC19D623D30027EEF4 /* CHJAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJAboutViewController.h; sourceTree = "<group>"; };
+		8A13A2AD19D623D30027EEF4 /* CHJAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJAboutViewController.m; sourceTree = "<group>"; };
+		8A1F3097199981C400CF24E4 /* CHJAddEventController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJAddEventController.h; sourceTree = "<group>"; };
+		8A1F3098199981C400CF24E4 /* CHJAddEventController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJAddEventController.m; sourceTree = "<group>"; };
+		8A1F3099199981C400CF24E4 /* CHJAddEventTableSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJAddEventTableSubView.h; sourceTree = "<group>"; };
+		8A1F309A199981C400CF24E4 /* CHJAddEventTableSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJAddEventTableSubView.m; sourceTree = "<group>"; };
+		8A1F309D199981D500CF24E4 /* CHJDayHourController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJDayHourController.h; sourceTree = "<group>"; };
+		8A1F309E199981D500CF24E4 /* CHJDayHourController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJDayHourController.m; sourceTree = "<group>"; };
+		8A1F309F199981D500CF24E4 /* CHJLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJLoginViewController.h; sourceTree = "<group>"; };
+		8A1F30A0199981D500CF24E4 /* CHJLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJLoginViewController.m; sourceTree = "<group>"; };
+		8A1F30A1199981D500CF24E4 /* CHJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJTabBarController.h; sourceTree = "<group>"; };
+		8A1F30A2199981D500CF24E4 /* CHJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJTabBarController.m; sourceTree = "<group>"; };
+		8A1F30A3199981D500CF24E4 /* CHJWeekDayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJWeekDayController.h; sourceTree = "<group>"; };
+		8A1F30A4199981D500CF24E4 /* CHJWeekDayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJWeekDayController.m; sourceTree = "<group>"; };
+		8A37D579198FEE0900A6A9EC /* CHJCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHJCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A37D57C198FEE0900A6A9EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8A37D57E198FEE0900A6A9EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8A37D580198FEE0900A6A9EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8A37D584198FEE0900A6A9EC /* CHJCalendar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CHJCalendar-Info.plist"; sourceTree = "<group>"; };
+		8A37D586198FEE0900A6A9EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A37D588198FEE0900A6A9EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A37D58A198FEE0900A6A9EC /* CHJCalendar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CHJCalendar-Prefix.pch"; sourceTree = "<group>"; };
+		8A37D58B198FEE0900A6A9EC /* CHJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHJAppDelegate.h; sourceTree = "<group>"; };
+		8A37D58C198FEE0900A6A9EC /* CHJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHJAppDelegate.m; sourceTree = "<group>"; };
+		8A37D58E198FEE0900A6A9EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8A37D594198FEE0900A6A9EC /* CHJCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CHJCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A37D595198FEE0900A6A9EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8A37D59D198FEE0900A6A9EC /* CHJCalendarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CHJCalendarTests-Info.plist"; sourceTree = "<group>"; };
+		8A37D59F198FEE0900A6A9EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A37D5A1198FEE0900A6A9EC /* CHJCalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHJCalendarTests.m; sourceTree = "<group>"; };
+		8A37D5AB198FEE2500A6A9EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8A41912D19D63FD90059BBB7 /* CHJEventDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJEventDetailController.h; sourceTree = "<group>"; };
+		8A41912E19D63FD90059BBB7 /* CHJEventDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJEventDetailController.m; sourceTree = "<group>"; };
+		8A495F13199239990017479E /* CHJUIUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJUIUtility.h; sourceTree = "<group>"; };
+		8A495F14199239990017479E /* CHJUIUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJUIUtility.m; sourceTree = "<group>"; };
+		8AD44E5F19D75A4D00F65039 /* DSLCalendarDayCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLCalendarDayCalloutView.h; sourceTree = "<group>"; };
+		8AD44E6019D75A4D00F65039 /* DSLCalendarDayCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLCalendarDayCalloutView.m; sourceTree = "<group>"; };
+		8AD44E6119D75A4D00F65039 /* DSLCalendarDayCalloutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSLCalendarDayCalloutView.xib; sourceTree = "<group>"; };
+		8AD44E6219D75A4D00F65039 /* DSLCalendarDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLCalendarDayView.h; sourceTree = "<group>"; };
+		8AD44E6319D75A4D00F65039 /* DSLCalendarDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLCalendarDayView.m; sourceTree = "<group>"; };
+		8AD44E6419D75A4D00F65039 /* DSLCalendarMonthSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLCalendarMonthSelectorView.h; sourceTree = "<group>"; };
+		8AD44E6519D75A4D00F65039 /* DSLCalendarMonthSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLCalendarMonthSelectorView.m; sourceTree = "<group>"; };
+		8AD44E6619D75A4D00F65039 /* DSLCalendarMonthSelectorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSLCalendarMonthSelectorView.xib; sourceTree = "<group>"; };
+		8AD44E6719D75A4D00F65039 /* DSLCalendarMonthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLCalendarMonthView.h; sourceTree = "<group>"; };
+		8AD44E6819D75A4D00F65039 /* DSLCalendarMonthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLCalendarMonthView.m; sourceTree = "<group>"; };
+		8AD44E6919D75A4D00F65039 /* DSLCalendarRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLCalendarRange.h; sourceTree = "<group>"; };
+		8AD44E6A19D75A4D00F65039 /* DSLCalendarRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLCalendarRange.m; sourceTree = "<group>"; };
+		8AD44E6B19D75A4D00F65039 /* DSLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLCalendarView.h; sourceTree = "<group>"; };
+		8AD44E6C19D75A4D00F65039 /* DSLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLCalendarView.m; sourceTree = "<group>"; };
+		8AD44E6E19D75A4D00F65039 /* DSLCalendar-nextMonth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendar-nextMonth.png"; sourceTree = "<group>"; };
+		8AD44E6F19D75A4D00F65039 /* DSLCalendar-nextMonth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendar-nextMonth@2x.png"; sourceTree = "<group>"; };
+		8AD44E7019D75A4D00F65039 /* DSLCalendar-previousMonth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendar-previousMonth.png"; sourceTree = "<group>"; };
+		8AD44E7119D75A4D00F65039 /* DSLCalendar-previousMonth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendar-previousMonth@2x.png"; sourceTree = "<group>"; };
+		8AD44E7219D75A4D00F65039 /* DSLCalendarDayCallout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DSLCalendarDayCallout.png; sourceTree = "<group>"; };
+		8AD44E7319D75A4D00F65039 /* DSLCalendarDayCallout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDayCallout@2x.png"; sourceTree = "<group>"; };
+		8AD44E7419D75A4D00F65039 /* DSLCalendarDaySelection-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDaySelection-left.png"; sourceTree = "<group>"; };
+		8AD44E7519D75A4D00F65039 /* DSLCalendarDaySelection-left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDaySelection-left@2x.png"; sourceTree = "<group>"; };
+		8AD44E7619D75A4D00F65039 /* DSLCalendarDaySelection-middle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDaySelection-middle.png"; sourceTree = "<group>"; };
+		8AD44E7719D75A4D00F65039 /* DSLCalendarDaySelection-middle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDaySelection-middle@2x.png"; sourceTree = "<group>"; };
+		8AD44E7819D75A4D00F65039 /* DSLCalendarDaySelection-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDaySelection-right.png"; sourceTree = "<group>"; };
+		8AD44E7919D75A4D00F65039 /* DSLCalendarDaySelection-right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDaySelection-right@2x.png"; sourceTree = "<group>"; };
+		8AD44E7A19D75A4D00F65039 /* DSLCalendarDaySelection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DSLCalendarDaySelection.png; sourceTree = "<group>"; };
+		8AD44E7B19D75A4D00F65039 /* DSLCalendarDaySelection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDaySelection@2x.png"; sourceTree = "<group>"; };
+		8AD44E7C19D75A4D00F65039 /* NSDate+DSLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DSLCalendarView.h"; sourceTree = "<group>"; };
+		8AD44E7D19D75A4D00F65039 /* NSDate+DSLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DSLCalendarView.m"; sourceTree = "<group>"; };
+		8AD44E9519D75A8000F65039 /* CHJMonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJMonthViewController.h; sourceTree = "<group>"; };
+		8AD44E9619D75A8000F65039 /* CHJMonthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJMonthViewController.m; sourceTree = "<group>"; };
+		8AD762861998226C00106F83 /* CHJDayHourTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJDayHourTableViewCell.h; sourceTree = "<group>"; };
+		8AD762871998226C00106F83 /* CHJDayHourTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJDayHourTableViewCell.m; sourceTree = "<group>"; };
+		8AD762881998226C00106F83 /* CHJDayHourTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHJDayHourTableViewCell.xib; sourceTree = "<group>"; };
+		8AD7628B1998238C00106F83 /* CHJWeekDayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJWeekDayTableViewCell.h; sourceTree = "<group>"; };
+		8AD7628C1998238C00106F83 /* CHJWeekDayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJWeekDayTableViewCell.m; sourceTree = "<group>"; };
+		8AD7628D1998238C00106F83 /* CHJWeekDayTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHJWeekDayTableViewCell.xib; sourceTree = "<group>"; };
+		8AEAB595199A6D3800D70298 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		8AECDEA019A26A0000208362 /* CHJSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJSettingController.h; sourceTree = "<group>"; };
+		8AECDEA119A26A0000208362 /* CHJSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJSettingController.m; sourceTree = "<group>"; };
+		8AFFABA419CCA91B006B91EC /* CHJEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJEvent.h; sourceTree = "<group>"; };
+		8AFFABA519CCA91B006B91EC /* CHJEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJEvent.m; sourceTree = "<group>"; };
+		D27C22611A0A0C3F0017F970 /* about@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about@2x.png"; sourceTree = "<group>"; };
+		D27C22631A0A216A0017F970 /* backicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backicon.png; sourceTree = "<group>"; };
+		D27C226E1A0B14830017F970 /* CHJAttenionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHJAttenionViewController.h; sourceTree = "<group>"; };
+		D27C226F1A0B14830017F970 /* CHJAttenionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHJAttenionViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A37D576198FEE0900A6A9EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A37D57F198FEE0900A6A9EC /* CoreGraphics.framework in Frameworks */,
+				8A37D581198FEE0900A6A9EC /* UIKit.framework in Frameworks */,
+				8A37D57D198FEE0900A6A9EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A37D591198FEE0900A6A9EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A37D596198FEE0900A6A9EC /* XCTest.framework in Frameworks */,
+				8A37D598198FEE0900A6A9EC /* UIKit.framework in Frameworks */,
+				8A37D597198FEE0900A6A9EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A13A2A519D6222F0027EEF4 /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				D27C22611A0A0C3F0017F970 /* about@2x.png */,
+				D27C22631A0A216A0017F970 /* backicon.png */,
+				8A13A2AC19D623D30027EEF4 /* CHJAboutViewController.h */,
+				8A13A2AD19D623D30027EEF4 /* CHJAboutViewController.m */,
+				D27C226E1A0B14830017F970 /* CHJAttenionViewController.h */,
+				D27C226F1A0B14830017F970 /* CHJAttenionViewController.m */,
+			);
+			name = misc;
+			sourceTree = "<group>";
+		};
+		8A37D570198FEE0900A6A9EC = {
+			isa = PBXGroup;
+			children = (
+				8A37D582198FEE0900A6A9EC /* CHJCalendar */,
+				8A37D59B198FEE0900A6A9EC /* CHJCalendarTests */,
+				8A37D57B198FEE0900A6A9EC /* Frameworks */,
+				8A37D57A198FEE0900A6A9EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A37D57A198FEE0900A6A9EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A37D579198FEE0900A6A9EC /* CHJCalendar.app */,
+				8A37D594198FEE0900A6A9EC /* CHJCalendarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A37D57B198FEE0900A6A9EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A37D57C198FEE0900A6A9EC /* Foundation.framework */,
+				8A37D57E198FEE0900A6A9EC /* CoreGraphics.framework */,
+				8A37D580198FEE0900A6A9EC /* UIKit.framework */,
+				8A37D595198FEE0900A6A9EC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A37D582198FEE0900A6A9EC /* CHJCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				8A495F1619923AB10017479E /* model */,
+				8A495F0A199164080017479E /* view */,
+				8A495F09199163500017479E /* controller */,
+				8A37D5AD1990315900A6A9EC /* imgs */,
+				8A37D58B198FEE0900A6A9EC /* CHJAppDelegate.h */,
+				8A37D58C198FEE0900A6A9EC /* CHJAppDelegate.m */,
+				8A37D58E198FEE0900A6A9EC /* Images.xcassets */,
+				8A37D583198FEE0900A6A9EC /* Supporting Files */,
+			);
+			path = CHJCalendar;
+			sourceTree = "<group>";
+		};
+		8A37D583198FEE0900A6A9EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A37D584198FEE0900A6A9EC /* CHJCalendar-Info.plist */,
+				8A37D585198FEE0900A6A9EC /* InfoPlist.strings */,
+				8A37D588198FEE0900A6A9EC /* main.m */,
+				8A37D58A198FEE0900A6A9EC /* CHJCalendar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A37D59B198FEE0900A6A9EC /* CHJCalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A37D5A1198FEE0900A6A9EC /* CHJCalendarTests.m */,
+				8A37D59C198FEE0900A6A9EC /* Supporting Files */,
+			);
+			path = CHJCalendarTests;
+			sourceTree = "<group>";
+		};
+		8A37D59C198FEE0900A6A9EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A37D59D198FEE0900A6A9EC /* CHJCalendarTests-Info.plist */,
+				8A37D59E198FEE0900A6A9EC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A37D5AD1990315900A6A9EC /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = imgs;
+			sourceTree = "<group>";
+		};
+		8A495F09199163500017479E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				8AD44E9519D75A8000F65039 /* CHJMonthViewController.h */,
+				8AD44E9619D75A8000F65039 /* CHJMonthViewController.m */,
+				8AD44E5E19D75A2C00F65039 /* DSL */,
+				8A13A2A519D6222F0027EEF4 /* misc */,
+				8AECDEA019A26A0000208362 /* CHJSettingController.h */,
+				8AECDEA119A26A0000208362 /* CHJSettingController.m */,
+				8A1F30A3199981D500CF24E4 /* CHJWeekDayController.h */,
+				8A1F30A4199981D500CF24E4 /* CHJWeekDayController.m */,
+				8A1F309D199981D500CF24E4 /* CHJDayHourController.h */,
+				8A1F30A2199981D500CF24E4 /* CHJTabBarController.m */,
+				8A1F309E199981D500CF24E4 /* CHJDayHourController.m */,
+				8A1F309F199981D500CF24E4 /* CHJLoginViewController.h */,
+				8A1F30A0199981D500CF24E4 /* CHJLoginViewController.m */,
+				8A1F30A1199981D500CF24E4 /* CHJTabBarController.h */,
+				8A1F3097199981C400CF24E4 /* CHJAddEventController.h */,
+				8A1F3098199981C400CF24E4 /* CHJAddEventController.m */,
+				8A1F3099199981C400CF24E4 /* CHJAddEventTableSubView.h */,
+				8A1F309A199981C400CF24E4 /* CHJAddEventTableSubView.m */,
+				8A41912D19D63FD90059BBB7 /* CHJEventDetailController.h */,
+				8A41912E19D63FD90059BBB7 /* CHJEventDetailController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		8A495F0A199164080017479E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8A37D5AB198FEE2500A6A9EC /* Main.storyboard */,
+				8A495F13199239990017479E /* CHJUIUtility.h */,
+				8A495F14199239990017479E /* CHJUIUtility.m */,
+				8AD7628B1998238C00106F83 /* CHJWeekDayTableViewCell.h */,
+				8AD7628C1998238C00106F83 /* CHJWeekDayTableViewCell.m */,
+				8AD7628D1998238C00106F83 /* CHJWeekDayTableViewCell.xib */,
+				8AD762861998226C00106F83 /* CHJDayHourTableViewCell.h */,
+				8AD762871998226C00106F83 /* CHJDayHourTableViewCell.m */,
+				8AD762881998226C00106F83 /* CHJDayHourTableViewCell.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		8A495F1619923AB10017479E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8AEAB594199A6D3800D70298 /* Main.xcdatamodeld */,
+				8AFFABA419CCA91B006B91EC /* CHJEvent.h */,
+				8AFFABA519CCA91B006B91EC /* CHJEvent.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		8AD44E5E19D75A2C00F65039 /* DSL */ = {
+			isa = PBXGroup;
+			children = (
+				8AD44E5F19D75A4D00F65039 /* DSLCalendarDayCalloutView.h */,
+				8AD44E6019D75A4D00F65039 /* DSLCalendarDayCalloutView.m */,
+				8AD44E6119D75A4D00F65039 /* DSLCalendarDayCalloutView.xib */,
+				8AD44E6219D75A4D00F65039 /* DSLCalendarDayView.h */,
+				8AD44E6319D75A4D00F65039 /* DSLCalendarDayView.m */,
+				8AD44E6419D75A4D00F65039 /* DSLCalendarMonthSelectorView.h */,
+				8AD44E6519D75A4D00F65039 /* DSLCalendarMonthSelectorView.m */,
+				8AD44E6619D75A4D00F65039 /* DSLCalendarMonthSelectorView.xib */,
+				8AD44E6719D75A4D00F65039 /* DSLCalendarMonthView.h */,
+				8AD44E6819D75A4D00F65039 /* DSLCalendarMonthView.m */,
+				8AD44E6919D75A4D00F65039 /* DSLCalendarRange.h */,
+				8AD44E6A19D75A4D00F65039 /* DSLCalendarRange.m */,
+				8AD44E6B19D75A4D00F65039 /* DSLCalendarView.h */,
+				8AD44E6C19D75A4D00F65039 /* DSLCalendarView.m */,
+				8AD44E6D19D75A4D00F65039 /* Images */,
+				8AD44E7C19D75A4D00F65039 /* NSDate+DSLCalendarView.h */,
+				8AD44E7D19D75A4D00F65039 /* NSDate+DSLCalendarView.m */,
+			);
+			name = DSL;
+			sourceTree = "<group>";
+		};
+		8AD44E6D19D75A4D00F65039 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8AD44E6E19D75A4D00F65039 /* DSLCalendar-nextMonth.png */,
+				8AD44E6F19D75A4D00F65039 /* DSLCalendar-nextMonth@2x.png */,
+				8AD44E7019D75A4D00F65039 /* DSLCalendar-previousMonth.png */,
+				8AD44E7119D75A4D00F65039 /* DSLCalendar-previousMonth@2x.png */,
+				8AD44E7219D75A4D00F65039 /* DSLCalendarDayCallout.png */,
+				8AD44E7319D75A4D00F65039 /* DSLCalendarDayCallout@2x.png */,
+				8AD44E7419D75A4D00F65039 /* DSLCalendarDaySelection-left.png */,
+				8AD44E7519D75A4D00F65039 /* DSLCalendarDaySelection-left@2x.png */,
+				8AD44E7619D75A4D00F65039 /* DSLCalendarDaySelection-middle.png */,
+				8AD44E7719D75A4D00F65039 /* DSLCalendarDaySelection-middle@2x.png */,
+				8AD44E7819D75A4D00F65039 /* DSLCalendarDaySelection-right.png */,
+				8AD44E7919D75A4D00F65039 /* DSLCalendarDaySelection-right@2x.png */,
+				8AD44E7A19D75A4D00F65039 /* DSLCalendarDaySelection.png */,
+				8AD44E7B19D75A4D00F65039 /* DSLCalendarDaySelection@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A37D578198FEE0900A6A9EC /* CHJCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A37D5A5198FEE0900A6A9EC /* Build configuration list for PBXNativeTarget "CHJCalendar" */;
+			buildPhases = (
+				8A37D575198FEE0900A6A9EC /* Sources */,
+				8A37D576198FEE0900A6A9EC /* Frameworks */,
+				8A37D577198FEE0900A6A9EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHJCalendar;
+			productName = CHJCalendar;
+			productReference = 8A37D579198FEE0900A6A9EC /* CHJCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A37D593198FEE0900A6A9EC /* CHJCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A37D5A8198FEE0900A6A9EC /* Build configuration list for PBXNativeTarget "CHJCalendarTests" */;
+			buildPhases = (
+				8A37D590198FEE0900A6A9EC /* Sources */,
+				8A37D591198FEE0900A6A9EC /* Frameworks */,
+				8A37D592198FEE0900A6A9EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A37D59A198FEE0900A6A9EC /* PBXTargetDependency */,
+			);
+			name = CHJCalendarTests;
+			productName = CHJCalendarTests;
+			productReference = 8A37D594198FEE0900A6A9EC /* CHJCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A37D571198FEE0900A6A9EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CHJ;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					8A37D578198FEE0900A6A9EC = {
+						DevelopmentTeam = 2L795PMX6M;
+					};
+					8A37D593198FEE0900A6A9EC = {
+						DevelopmentTeam = 2L795PMX6M;
+						TestTargetID = 8A37D578198FEE0900A6A9EC;
+					};
+				};
+			};
+			buildConfigurationList = 8A37D574198FEE0900A6A9EC /* Build configuration list for PBXProject "CHJCalendar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8A37D570198FEE0900A6A9EC;
+			productRefGroup = 8A37D57A198FEE0900A6A9EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A37D578198FEE0900A6A9EC /* CHJCalendar */,
+				8A37D593198FEE0900A6A9EC /* CHJCalendarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A37D577198FEE0900A6A9EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27C22621A0A0C3F0017F970 /* about@2x.png in Resources */,
+				8A37D5AC198FEE2500A6A9EC /* Main.storyboard in Resources */,
+				8AD7628A1998226C00106F83 /* CHJDayHourTableViewCell.xib in Resources */,
+				8AD44E8219D75A4D00F65039 /* DSLCalendarMonthSelectorView.xib in Resources */,
+				8AD44E8A19D75A4D00F65039 /* DSLCalendarDayCallout.png in Resources */,
+				8AD44E9019D75A4D00F65039 /* DSLCalendarDaySelection-right.png in Resources */,
+				8AD44E9319D75A4D00F65039 /* DSLCalendarDaySelection@2x.png in Resources */,
+				8AD44E8F19D75A4D00F65039 /* DSLCalendarDaySelection-middle@2x.png in Resources */,
+				8AD44E8619D75A4D00F65039 /* DSLCalendar-nextMonth.png in Resources */,
+				8AD44E8D19D75A4D00F65039 /* DSLCalendarDaySelection-left@2x.png in Resources */,
+				8AD44E8919D75A4D00F65039 /* DSLCalendar-previousMonth@2x.png in Resources */,
+				8A37D587198FEE0900A6A9EC /* InfoPlist.strings in Resources */,
+				8AD44E8B19D75A4D00F65039 /* DSLCalendarDayCallout@2x.png in Resources */,
+				8AD44E8819D75A4D00F65039 /* DSLCalendar-previousMonth.png in Resources */,
+				8AD44E8E19D75A4D00F65039 /* DSLCalendarDaySelection-middle.png in Resources */,
+				8AD44E8719D75A4D00F65039 /* DSLCalendar-nextMonth@2x.png in Resources */,
+				8AD44E9119D75A4D00F65039 /* DSLCalendarDaySelection-right@2x.png in Resources */,
+				8A37D58F198FEE0900A6A9EC /* Images.xcassets in Resources */,
+				8AD44E7F19D75A4D00F65039 /* DSLCalendarDayCalloutView.xib in Resources */,
+				8AD44E8C19D75A4D00F65039 /* DSLCalendarDaySelection-left.png in Resources */,
+				D27C22641A0A216A0017F970 /* backicon.png in Resources */,
+				8AD7628F1998238C00106F83 /* CHJWeekDayTableViewCell.xib in Resources */,
+				8AD44E9219D75A4D00F65039 /* DSLCalendarDaySelection.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A37D592198FEE0900A6A9EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A37D5A0198FEE0900A6A9EC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A37D575198FEE0900A6A9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD44E7E19D75A4D00F65039 /* DSLCalendarDayCalloutView.m in Sources */,
+				8A1F30A5199981D500CF24E4 /* CHJDayHourController.m in Sources */,
+				8AD44E8419D75A4D00F65039 /* DSLCalendarRange.m in Sources */,
+				8A37D58D198FEE0900A6A9EC /* CHJAppDelegate.m in Sources */,
+				8A1F309C199981C400CF24E4 /* CHJAddEventTableSubView.m in Sources */,
+				D27C22711A0B14830017F970 /* CHJAttenionViewController.m in Sources */,
+				8AD44E8119D75A4D00F65039 /* DSLCalendarMonthSelectorView.m in Sources */,
+				8AD44E8519D75A4D00F65039 /* DSLCalendarView.m in Sources */,
+				8A41912F19D63FD90059BBB7 /* CHJEventDetailController.m in Sources */,
+				8AFFABA619CCA91B006B91EC /* CHJEvent.m in Sources */,
+				8AD7628E1998238C00106F83 /* CHJWeekDayTableViewCell.m in Sources */,
+				8AD44E8019D75A4D00F65039 /* DSLCalendarDayView.m in Sources */,
+				8A1F30A8199981D500CF24E4 /* CHJWeekDayController.m in Sources */,
+				8AD44E9419D75A4D00F65039 /* NSDate+DSLCalendarView.m in Sources */,
+				8AD44E9719D75A8000F65039 /* CHJMonthViewController.m in Sources */,
+				8A1F30A6199981D500CF24E4 /* CHJLoginViewController.m in Sources */,
+				8AD44E8319D75A4D00F65039 /* DSLCalendarMonthView.m in Sources */,
+				8A495F15199239990017479E /* CHJUIUtility.m in Sources */,
+				8A1F30A7199981D500CF24E4 /* CHJTabBarController.m in Sources */,
+				8AEAB596199A6D3800D70298 /* Main.xcdatamodeld in Sources */,
+				8AD762891998226C00106F83 /* CHJDayHourTableViewCell.m in Sources */,
+				8A1F309B199981C400CF24E4 /* CHJAddEventController.m in Sources */,
+				8A37D589198FEE0900A6A9EC /* main.m in Sources */,
+				8A13A2AE19D623D30027EEF4 /* CHJAboutViewController.m in Sources */,
+				8AECDEA219A26A0000208362 /* CHJSettingController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A37D590198FEE0900A6A9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A37D5A2198FEE0900A6A9EC /* CHJCalendarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A37D59A198FEE0900A6A9EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A37D578198FEE0900A6A9EC /* CHJCalendar */;
+			targetProxy = 8A37D599198FEE0900A6A9EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A37D585198FEE0900A6A9EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A37D586198FEE0900A6A9EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8A37D59E198FEE0900A6A9EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A37D59F198FEE0900A6A9EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A37D5A3198FEE0900A6A9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A37D5A4198FEE0900A6A9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A37D5A6198FEE0900A6A9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CHJCalendar/CHJCalendar-Prefix.pch";
+				INFOPLIST_FILE = "CHJCalendar/CHJCalendar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "36b89cbb-e156-4e9d-819f-d8c921751081";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8A37D5A7198FEE0900A6A9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CHJCalendar/CHJCalendar-Prefix.pch";
+				INFOPLIST_FILE = "CHJCalendar/CHJCalendar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "36b89cbb-e156-4e9d-819f-d8c921751081";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8A37D5A9198FEE0900A6A9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CHJCalendar.app/CHJCalendar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CHJCalendar/CHJCalendar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CHJCalendarTests/CHJCalendarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8A37D5AA198FEE0900A6A9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CHJCalendar.app/CHJCalendar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CHJCalendar/CHJCalendar-Prefix.pch";
+				INFOPLIST_FILE = "CHJCalendarTests/CHJCalendarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A37D574198FEE0900A6A9EC /* Build configuration list for PBXProject "CHJCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A37D5A3198FEE0900A6A9EC /* Debug */,
+				8A37D5A4198FEE0900A6A9EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A37D5A5198FEE0900A6A9EC /* Build configuration list for PBXNativeTarget "CHJCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A37D5A6198FEE0900A6A9EC /* Debug */,
+				8A37D5A7198FEE0900A6A9EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A37D5A8198FEE0900A6A9EC /* Build configuration list for PBXNativeTarget "CHJCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A37D5A9198FEE0900A6A9EC /* Debug */,
+				8A37D5AA198FEE0900A6A9EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8AEAB594199A6D3800D70298 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8AEAB595199A6D3800D70298 /* Main.xcdatamodel */,
+			);
+			currentVersion = 8AEAB595199A6D3800D70298 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8A37D571198FEE0900A6A9EC /* Project object */;
+}

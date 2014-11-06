@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CHJEvent" representedClassName="CHJEvent" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endDateTime" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="eventId" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="startDateTime" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="title" attributeType="String" maxValueString="50" syncable="YES"/>
+        <attribute name="userId" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CHJEvent" positionX="-2637" positionY="-981" width="128" height="133"/>
+    </elements>
+</model>
